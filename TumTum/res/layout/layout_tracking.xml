@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:orientation="horizontal"
+	    android:background="@android:color/white" >
+	    <ImageView
+	        android:id="@+id/imgvw_app_icon"
+	        android:layout_width="48dp"
+	        android:layout_height="match_parent"
+	        android:padding="8dp"
+	        android:src="@drawable/app_icon_blue"
+	        android:layout_alignParentLeft="true" />
+	    <TextView 
+	        android:id="@+id/txtvw_app_title"
+	        android:layout_toRightOf="@+id/imgvw_app_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="Tum Tum IITB"
+	        android:textSize="14sp"
+	        android:gravity="center" />
+	    <ImageButton
+	        android:layout_width="32dp"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/app_drawer"
+	        android:layout_alignParentRight="true" />
+	</RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Main content 
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+		-->
+        <!-- Left navigation 
+
+        <fragment
+            android:id="@+id/left_nav_layout"
+            android:name="com.iitbombay.tumtumtracker.LeftNavigationFragment"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+            
+		-->
+    </android.support.v4.widget.DrawerLayout>
+    
+</LinearLayout>
