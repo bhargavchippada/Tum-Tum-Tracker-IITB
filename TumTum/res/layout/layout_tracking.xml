@@ -46,12 +46,12 @@
 
         <fragment
             android:id="@+id/left_nav_layout"
-            android:name="com.iitbombay.tumtumtracker.LeftNavigationFragment"
+            android:name="tumtumtracker.LeftNavigationFragment"
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_gravity="start" />
-            
-		-->
+        -->
+		
     </android.support.v4.widget.DrawerLayout>
     
 </LinearLayout>

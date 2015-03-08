@@ -27,14 +27,15 @@
         android:required="true" />
 
     <application
+        android:name="tumtumtracker.ApplicationContext"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="tumtumtracker.TrackingActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,6 +49,21 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <!-- Sugar orm: http://satyan.github.io/sugar/index.html -->
+        <!-- Sugar SqlLite related -->
+        <meta-data
+            android:name="DATABASE"
+            android:value="iitb_ttt.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="datamodel" />
     </application>
 
 </manifest>
