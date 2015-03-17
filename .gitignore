@@ -35,3 +35,21 @@
 .Trashes
 ehthumbs.db
 Thumbs.db 
+
+####################
+*~
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+TumTum/bin/
+TumTum/gen/
+
+# Local configuration file (sdk path, etc)
+project.properties
