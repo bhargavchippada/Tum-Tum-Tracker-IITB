@@ -50,6 +50,3 @@ Thumbs.db
 # generated files
 TumTum/bin/
 TumTum/gen/
-
-# Local configuration file (sdk path, etc)
-project.properties
