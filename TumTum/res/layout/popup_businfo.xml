@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="@dimen/dimen_8"
         android:orientation="vertical" >
 
         <!-- Route -->
@@ -15,10 +15,10 @@
         <TextView
             android:id="@+id/marker_route"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_height="@dimen/dimen_32"
             android:gravity="center"
             android:text="H13/Maingate"
-            android:textSize="18sp"
+            android:textSize="@dimen/font_20"
             android:textStyle="bold" />
 
         <!-- Speed -->
@@ -26,18 +26,18 @@
         <TextView
             android:id="@+id/marker_speed"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_height="@dimen/dimen_32"
             android:gravity="center"
             android:text="23 kmph"
             android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            android:textSize="@dimen/font_14" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="@dimen/dimen_8"
         android:gravity="right"
         android:orientation="vertical" >
 
@@ -46,20 +46,20 @@
         <TextView
             android:id="@+id/marker_desc"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_height="@dimen/dimen_32"
             android:gravity="center"
             android:text="H13-Campus-Maingate"
-            android:textSize="14sp" />
+            android:textSize="@dimen/font_14" />
 
         <!-- Updated -->
 
         <TextView
             android:id="@+id/marker_updated"
             android:layout_width="wrap_content"
-            android:layout_height="32dp"
+            android:layout_height="@dimen/dimen_32"
             android:gravity="center"
             android:text="10 minutes ago"
-            android:textSize="14sp" />
+            android:textSize="@dimen/font_14" />
     </LinearLayout>
 
 </RelativeLayout>

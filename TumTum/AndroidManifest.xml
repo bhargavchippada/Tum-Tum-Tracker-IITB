@@ -5,9 +5,9 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
-    <!-- Network satte, Internet access permissions -->
+    <!-- Network state, Internet access permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -49,21 +49,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <!-- Sugar orm: http://satyan.github.io/sugar/index.html -->
-        <!-- Sugar SqlLite related -->
-        <meta-data
-            android:name="DATABASE"
-            android:value="iitb_ttt.db" />
-        <meta-data
-            android:name="VERSION"
-            android:value="1" />
-        <meta-data
-            android:name="QUERY_LOG"
-            android:value="true" />
-        <meta-data
-            android:name="DOMAIN_PACKAGE_NAME"
-            android:value="datamodel" />
     </application>
 
 </manifest>

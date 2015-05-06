@@ -5,14 +5,14 @@
     android:orientation="vertical" >
 	<RelativeLayout
 	    android:layout_width="match_parent"
-	    android:layout_height="48dp"
+	    android:layout_height="@dimen/dimen_48"
 	    android:orientation="horizontal"
 	    android:background="@android:color/white" >
 	    <ImageView
 	        android:id="@+id/imgvw_app_icon"
-	        android:layout_width="48dp"
+	        android:layout_width="@dimen/dimen_48"
 	        android:layout_height="match_parent"
-	        android:padding="8dp"
+	        android:padding="@dimen/dimen_8"
 	        android:src="@drawable/app_icon_blue"
 	        android:layout_alignParentLeft="true" />
 	    <TextView 
@@ -21,10 +21,10 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="match_parent"
 	        android:text="Tum Tum IITB"
-	        android:textSize="14sp"
+	        android:textSize="@dimen/font_14"
 	        android:gravity="center" />
 	    <ImageButton
-	        android:layout_width="32dp"
+	        android:layout_width="@dimen/dimen_32"
 	        android:layout_height="match_parent"
 	        android:background="@drawable/app_drawer"
 	        android:layout_alignParentRight="true" />

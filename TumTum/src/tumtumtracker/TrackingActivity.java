@@ -16,15 +16,17 @@ public class TrackingActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.layout_tracking);
 
-		new Thread() {
-			@Override public void run() {
-				TimeProfile tp = new TimeProfile();
-
-				boolean b = GetTTTData.threadSafeTTTDataSync();
-				Utils.logv(classname, b+"");
-
-				tp.print(classname);
-			}
-		}.start();
+		for(int i=0; i<10; i++){
+			new Thread() {
+				@Override public void run() {
+					TimeProfile tp = new TimeProfile();
+	
+					boolean b = GetTTTData.threadSafeTTTDataSync();
+					Utils.logv(classname, b+"");
+	
+					tp.print(classname);
+				}
+			}.start();
+		}
 	}
 }

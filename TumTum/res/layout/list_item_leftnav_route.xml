@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/list_item_route_image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/dimen_48"
+        android:layout_height="@dimen/dimen_48"
         android:layout_gravity="center"
-        android:padding="8dp"
+        android:padding="@dimen/dimen_8"
         android:src="@drawable/icon_gesture_orange" />
 
     <LinearLayout
@@ -18,10 +18,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:paddingBottom="8dp"
+        android:paddingBottom="@dimen/dimen_8"
         android:paddingLeft="0dp"
-        android:paddingRight="8dp"
-        android:paddingTop="8dp" >
+        android:paddingRight="@dimen/dimen_8"
+        android:paddingTop="@dimen/dimen_8" >
 
         <TextView
             android:id="@+id/list_route_title"
@@ -29,14 +29,14 @@
             android:layout_height="wrap_content"
             android:text="3A Hostels"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="@dimen/font_20" />
 
         <TextView
             android:id="@+id/list_route_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hostel 13 - Main building - Main gate"
-            android:textSize="14sp" />
+            android:textSize="@dimen/font_14" />
     </LinearLayout>
 
 </LinearLayout>

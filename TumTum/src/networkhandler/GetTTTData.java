@@ -35,10 +35,8 @@ public class GetTTTData {
 				InputStreamReader InStreamReader = new InputStreamReader(urlConnection.getInputStream());
 				JsonElement jelement = new JsonParser().parse(InStreamReader);
 				JsonObject  input = jelement.getAsJsonObject();
-				Utils.logv(classname, input.toString());
-				//readStream(in);
+				//Utils.logv(classname, input.toString());
 			}catch(Exception ex){
-				ex.printStackTrace();
 				Utils.logv(classname, "Data retrievel from "+AppSettings.dataUrl+" failed", ex);
 				urlConnection.disconnect();
 				return false;
@@ -46,7 +44,6 @@ public class GetTTTData {
 				urlConnection.disconnect();
 			}
 		} catch (IOException ex) {
-			ex.printStackTrace();
 			Utils.logv(classname, "HttpURLConnection establishment failed", ex);
 			return false;
 		}

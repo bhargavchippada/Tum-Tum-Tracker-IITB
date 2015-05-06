@@ -5,7 +5,7 @@ import com.google.android.gms.maps.model.LatLng;
 public class AppSettings {
 
 	/**
-	 * URL for fetching json data
+	 * URL for fetching ttt json data
 	 */
 	public static final String dataUrl = "http://tumtum-iitb.org/ttt_data/";
 
@@ -18,12 +18,6 @@ public class AppSettings {
 	 * Wait time in milliseconds on last update failure
 	 */
 	public static final int failWait = 1500;
-
-	/**
-	 * The sugar sql db id of the site response field. We will be using only 1 row
-	 * in response table to save our response so, we might as well fix the id.
-	 */
-	public static final long responseDbId = 1;
 
 	/**
 	 * Default map center. Use when server data is not available.

@@ -1,5 +1,7 @@
 package tumtumtracker;
 
-public class ApplicationContext extends com.orm.SugarApp{
+import android.app.Application;
+
+public class ApplicationContext extends Application{
 	public static String classname = "ApplicationContext";
 }

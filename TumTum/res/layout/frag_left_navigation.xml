@@ -8,5 +8,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:dividerHeight="1dp" />
+        android:dividerHeight="@dimen/dimen_1" />
 </LinearLayout>
